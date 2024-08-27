@@ -54,14 +54,14 @@ export default function RenderTasks({ taskData }) {
           {editTaskIndex === index ? (
             <button
               onClick={() => handleSaveChange(index)}
-              className="invisible mr-5 px-2 rounded-sm py-1 hover:bg-slate-600 group-hover:visible"
+              className="visible md:invisible mr-5 px-2 rounded-sm py-1 hover:bg-slate-600 md:group-hover:visible"
             >
               <span className="font-semibold text-slate-900">Save</span>
             </button>
           ) : (
             <button
               onClick={() => handleEditToggle(index)}
-              className="invisible mr-5 px-2 rounded-sm py-1 hover:bg-slate-600 group-hover:visible"
+              className="visible mr-5 px-2 rounded-sm py-1 hover:bg-slate-600 md:group-hover:visible"
             >
               <span className="font-bold text-slate-900">Edit</span>
             </button>
@@ -76,7 +76,7 @@ export default function RenderTasks({ taskData }) {
       ) : (
         <button
           onClick={marksTaskCompleted}
-          className={`bg-rose-900 w-full mt-4 text-white font-semibold md:text-xl px-5 py-2 rounded-sm hover:bg-opacity-80 ${
+          className={`bg-rose-900 w-full mt-4 text-white font-semibold text-xl px-5 py-2 rounded-sm hover:bg-opacity-80 ${
             selectedTask.length === 0 ? "opacity-50 cursor-not-allowed" : ""
           }`}
           disabled={selectedTask.length === 0}

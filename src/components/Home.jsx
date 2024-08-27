@@ -47,6 +47,7 @@ export default function Home() {
   }, [tasks]);
 
   const handleAddTask = () => {
+
     if (newTask.trim() !== "") {
       setTasks((prevTasks) => [
         ...prevTasks,
@@ -120,10 +121,10 @@ export default function Home() {
   }
 
   return (
-    <div className="container relative mx-auto flex items-center justify-center h-screen">
+    <div className="container relative md:mx-auto flex items-center justify-center h-screen">
       <Toaster />
-      <div className="list-container drop-shadow-xl rounded-md w-1/2 p-5 bg-slate-900 shadow border border-slate-500">
-        <h1 className="text-center text-4xl font-bold py-3 mb-6 rounded-md shadow-lg               bg-gradient-to-r from-slate-950 via-slate-900 to-blue-950 text-gray-300 tracking-wider">
+      <div className="w-11/12 list-container drop-shadow-xl rounded-md md:w-1/2 p-5 bg-slate-900 shadow border border-slate-500">
+        <h1 className="text-center text-2xl md:text-4xl font-bold py-3 mb-6 rounded-md shadow-lg bg-gradient-to-r from-slate-950 via-slate-900 to-blue-950 text-gray-300 tracking-wider">
           ToDoes
         </h1>
         <Header dateToday={formattedDate} setIsToggle={setIsToggle} />

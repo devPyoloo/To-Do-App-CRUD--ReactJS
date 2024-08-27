@@ -12,7 +12,7 @@ export default function AddTask({ addTaskData }) {
     <>
     {isToggle && (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-        <div className="bg-white rounded-lg p-6 w-96 shadow-lg">
+        <div className="bg-white rounded-lg p-6 w-4/5 md:w-96 shadow-lg">
           <h2 className="text-xl font-bold mb-4 text-gray-700">Create your new task</h2>
            <input
             className="border-2 border-gray-300 p-2 rounded w-full outline-none focus:border-slate-800 mb-4"
