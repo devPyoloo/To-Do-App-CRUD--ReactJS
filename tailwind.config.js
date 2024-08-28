@@ -17,7 +17,7 @@ export default {
         lightpink: "#F7C5CC"
       },
       backgroundImage: {
-        'grid': "url('./src/assets/background.jpeg')",
+        'grid': "url('/assets/background.jpeg')",
       },
     },
   },
