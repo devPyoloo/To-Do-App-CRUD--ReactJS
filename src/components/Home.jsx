@@ -28,7 +28,7 @@ export default function Home() {
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
 
-  const formattedDate = useMemo(() => formatDate(new Date().toLocaleDateString()), []);
+  const formattedDate = useMemo(() => formatDate(new Date()), []);
 
 
   const notifyStyles = {

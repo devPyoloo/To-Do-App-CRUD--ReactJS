@@ -21,8 +21,9 @@ export default function RenderTasks({ taskData }) {
           key={index}
           className="group flex rounded-sm mb-1 px-4 py-3 justify-between items-center border-b-2 border-b-slate-800 hover:bg-slate-800 hover:cursor-pointer"
         >
-          <label className="flex space-x-2 hover:cursor-pointer">
+          <label className="flex items-center space-x-2 hover:cursor-pointer">
             <input
+              className="w-4 h-4"
               type="checkbox"
               checked={task.completed}
               onChange={() => handleChange(index)}
