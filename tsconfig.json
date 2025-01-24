@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "esnext",                                 // Use the latest JavaScript features
+    "lib": ["dom", "dom.iterable", "esnext"],          // Include DOM and ES features
+    "jsx": "react-jsx"  ,                            // Enable React JSX support
+    "module": "esnext",                                // Modern ES module system
+    "moduleResolution": "node",                       // Resolve modules in Node.js style
+    "strict": true,                                    // Enable strict type checking
+    "esModuleInterop": true,                           // Ensure compatibility with CommonJS modules
+    "skipLibCheck": true,                              // Skip type checking of .d.ts files
+    "forceConsistentCasingInFileNames": true           // Enforce case sensitivity in imports
+  },
+  "include": ["src"],                                  // Include all files in the `src` folder
+  "exclude": ["node_modules"]                          // Exclude dependencies
+}

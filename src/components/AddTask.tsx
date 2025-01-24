@@ -1,4 +1,3 @@
-import { PropTypes } from 'prop-types'
 
 export default function AddTask({ addTaskData }) {
   const { isToggle, newTask, setNewTask, setIsToggle, handleAddTask } = addTaskData;
@@ -47,14 +46,4 @@ export default function AddTask({ addTaskData }) {
     )}
     </>
   )
-}
-
-AddTask.propTypes = {
-  addTaskData: PropTypes.shape({
-    isToggle: PropTypes.bool.isRequired,
-    newTask: PropTypes.string.isRequired,
-    setNewTask: PropTypes.func.isRequired,
-    setIsToggle: PropTypes.func.isRequired,
-    handleAddTask: PropTypes.func.isRequired
-  }).isRequired
 }
